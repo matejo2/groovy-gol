@@ -13,4 +13,11 @@ public class SimpleCell {
     }
 
 
+    public boolean[] getNeighbours() {
+        return neighbours;
+    }
+
+    public boolean isLiving() {
+        return living;
+    }
 }

@@ -6,10 +6,10 @@ class CellTest extends Specification {
         def cell = new SimpleCell()
 
         then: "cell is not living"
-        cell.living == false
+        !cell.isLiving()
         and: "cell has 8 neighbours"
-        cell.neighbours.size() == 8
+        cell.getNeighbours().size() == 8
         and: "each neighbour is false"
-        cell.neighbours == [false, false, false, false, false, false, false, false]
+        cell.getNeighbours() == [false, false, false, false, false, false, false, false]
     }
 }
